@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#173d34" />
+    <title>Chocovibe | Premium festive gifting</title>
+    <meta name="description" content="Premium chocolate, dry fruit and festive gift hampers by Chocovibe." />
+    <link rel="preload" as="image" href="assets/hero-hampers.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="announcement">
+      <p>Festive dispatch is now open</p>
+      <a href="#corporate">Corporate orders from 25 boxes</a>
+    </div>
+
+    <header class="site-header" id="top">
+      <a class="brand" href="#top" aria-label="Chocovibe home">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span>choco<span>vibe</span></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+      <nav class="main-nav" id="main-nav" aria-label="Primary navigation">
+        <a href="#collections">Gift boxes</a>
+        <a href="#why-us">The Chocovibe touch</a>
+        <a href="#corporate">Corporate gifting</a>
+        <a class="nav-order" href="#builder">Create an order</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-image" role="img" aria-label="Premium festive chocolate and dry fruit hampers"></div>
+        <div class="hero-content">
+          <p class="eyebrow light">Premium festive gifting</p>
+          <h1 id="hero-title">Chocovibe</h1>
+          <p class="hero-copy">Gift boxes with the details people remember.</p>
+          <div class="hero-actions">
+            <a class="button button-light" href="#collections">Choose a hamper</a>
+            <a class="text-link light" href="#corporate">For teams &amp; clients <span aria-hidden="true">&#8594;</span></a>
+          </div>
+        </div>
+        <div class="hero-note" aria-label="Hand-finished hamper details">
+          <span>Hand-finished</span>
+          <span>Chocolates &amp; dry fruit</span>
+        </div>
+      </section>
+
+      <section class="intro-band" aria-label="Chocovibe values">
+        <p>Designed for the moment it is opened, and the one that follows.</p>
+        <div class="intro-points">
+          <span>Small-batch chocolates</span>
+          <span>Thoughtful personalization</span>
+          <span>Pan-India dispatch</span>
+        </div>
+      </section>
+
+      <section class="collection section" id="collections" aria-labelledby="collection-title">
+        <div class="section-head split-head">
+          <div>
+            <p class="eyebrow">The festive edit</p>
+            <h2 id="collection-title">Curated to give generously.</h2>
+          </div>
+          <p class="section-intro">Choose a ready-to-send set, then make it unmistakably yours with a card, ribbon, and recipient experience.</p>
+        </div>
+
+        <div class="hamper-grid">
+          <article class="hamper-card featured-card">
+            <div class="hamper-photo photo-saffron" role="img" aria-label="Saffron celebration chocolate hamper"></div>
+            <div class="hamper-body">
+              <div class="hamper-meta"><span>Signature box</span><span>From Rs. 1,890</span></div>
+              <h3>Saffron Celebration</h3>
+              <p>Bonbons, pistachios, almonds, saffron, and a hand-poured diya.</p>
+              <button class="select-set" type="button" data-set="Saffron Celebration">Choose this box <span aria-hidden="true">&#8594;</span></button>
+            </div>
+          </article>
+
+          <article class="hamper-card">
+            <div class="hamper-photo photo-mithai" role="img" aria-label="Velvet Diwali chocolate hamper"></div>
+            <div class="hamper-body">
+              <div class="hamper-meta"><span>Gift box</span><span>From Rs. 1,490</span></div>
+              <h3>Velvet Diwali</h3>
+              <p>Dark chocolate truffles, cashews, a keepsake card, and festive ribbon.</p>
+              <button class="select-set" type="button" data-set="Velvet Diwali">Choose this box <span aria-hidden="true">&#8594;</span></button>
+            </div>
+          </article>
+
+          <article class="hamper-card">
+            <div class="hamper-photo photo-corporate" role="img" aria-label="Gilded gratitude corporate hamper"></div>
+            <div class="hamper-body">
+              <div class="hamper-meta"><span>Corporate edit</span><span>From Rs. 1,240</span></div>
+              <h3>Gilded Gratitude</h3>
+              <p>A polished chocolate and dry-fruit gesture, built for a larger list.</p>
+              <button class="select-set" type="button" data-set="Gilded Gratitude">Choose this box <span aria-hidden="true">&#8594;</span></button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="builder-wrap" id="builder" aria-labelledby="builder-title">
+        <div class="builder-visual" role="img" aria-label="Open premium gift box with chocolates and dry fruits"></div>
+        <div class="builder-panel">
+          <p class="eyebrow">Your hamper, your way</p>
+          <h2 id="builder-title">Make the giving feel personal.</h2>
+          <form id="order-form">
+            <label class="field-label" for="hamper-select">Start with a hamper</label>
+            <select id="hamper-select" name="hamper">
+              <option>Saffron Celebration</option>
+              <option>Velvet Diwali</option>
+              <option>Gilded Gratitude</option>
+            </select>
+
+            <div class="form-row">
+              <div>
+                <span class="field-label">Quantity</span>
+                <div class="quantity-control" aria-label="Quantity control">
+                  <button class="quantity-button" id="quantity-minus" type="button" aria-label="Reduce quantity">-</button>
+                  <input id="quantity" name="quantity" type="number" min="1" max="10000" value="1" inputmode="numeric" aria-label="Quantity" />
+                  <button class="quantity-button" id="quantity-plus" type="button" aria-label="Increase quantity">+</button>
+                </div>
+              </div>
+              <div>
+                <span class="field-label">Box palette</span>
+                <div class="swatches" role="radiogroup" aria-label="Box palette">
+                  <button class="swatch selected" type="button" data-palette="Pomegranate" aria-label="Pomegranate box palette" role="radio" aria-checked="true"><span class="swatch-red"></span></button>
+                  <button class="swatch" type="button" data-palette="Forest" aria-label="Forest green box palette" role="radio" aria-checked="false"><span class="swatch-green"></span></button>
+                  <button class="swatch" type="button" data-palette="Ivory" aria-label="Ivory box palette" role="radio" aria-checked="false"><span class="swatch-ivory"></span></button>
+                </div>
+              </div>
+            </div>
+
+            <label class="field-label" for="message">Gift note <span>(optional)</span></label>
+            <textarea id="message" name="message" maxlength="180" placeholder="A few words to make it theirs"></textarea>
+            <div class="field-footer"><span id="message-count">0 / 180</span><a href="#qr-experience">Add a QR greeting</a></div>
+
+            <label class="check-row" for="branding">
+              <input id="branding" type="checkbox" name="branding" />
+              <span class="check-box" aria-hidden="true"></span>
+              <span>Include branded sleeve or logo card</span>
+            </label>
+
+            <div class="order-bar">
+              <div><span>Selected</span><strong id="selected-set">Saffron Celebration</strong></div>
+              <button class="button button-dark" id="order-button" type="submit">Order on WhatsApp <span aria-hidden="true">&#8594;</span></button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="details section" id="why-us" aria-labelledby="details-title">
+        <div class="section-head centered-head">
+          <p class="eyebrow">Made to stay with them</p>
+          <h2 id="details-title">A gesture with a second chapter.</h2>
+        </div>
+        <div class="detail-grid">
+          <article>
+            <span class="detail-number">01</span>
+            <h3>Built around your people</h3>
+            <p>Choose the box, the ribbon, the note, and the little details that make a gift feel considered.</p>
+          </article>
+          <article>
+            <span class="detail-number">02</span>
+            <h3>From hand to handset</h3>
+            <p>Pair each hamper with a QR greeting made for a recipient, a team, or a shared celebration.</p>
+          </article>
+          <article>
+            <span class="detail-number">03</span>
+            <h3>Packed with poise</h3>
+            <p>Every order is finished for a beautiful reveal, whether it is one warm thank-you or one hundred.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="qr-section" id="qr-experience" aria-labelledby="qr-title">
+        <div class="qr-copy">
+          <p class="eyebrow light">The digital gift note</p>
+          <h2 id="qr-title">A little surprise, waiting behind the ribbon.</h2>
+          <p>A private note, made for one person and their festive moment.</p>
+          <label class="qr-input-label" for="recipient-name">Recipient name</label>
+          <div class="qr-field-row">
+            <input id="recipient-name" type="text" value="Ananya" maxlength="40" autocomplete="name" />
+            <button class="button button-gold" id="preview-greeting" type="button">Preview greeting</button>
+          </div>
+          <button class="text-link light copy-link" id="copy-greeting" type="button">Copy greeting link <span aria-hidden="true">&#8594;</span></button>
+          <span class="copy-status" id="copy-status" aria-live="polite"></span>
+        </div>
+        <div class="phone-frame" aria-label="QR code to a personalized Chocovibe greeting">
+          <div class="phone-top"><span></span></div>
+          <div class="phone-screen">
+            <p>FOR</p>
+            <strong id="phone-name">Ananya</strong>
+            <div class="qr-card"><img id="qr-image" alt="Scannable code for a personalized Chocovibe greeting" /></div>
+            <small>A note awaits</small>
+          </div>
+        </div>
+      </section>
+
+      <section class="corporate section" id="corporate" aria-labelledby="corporate-title">
+        <div class="corporate-image" role="img" aria-label="Branded premium gift boxes for corporate gifting"></div>
+        <div class="corporate-content">
+          <p class="eyebrow">Corporate gifting</p>
+          <h2 id="corporate-title">One feeling. A hundred personal touches.</h2>
+          <p>For clients, teams, launches, and festive lists that deserve more than a template. We can shape the box, branded sleeve, card, and QR greeting around your occasion.</p>
+          <div class="corporate-stats">
+            <div><strong>25+</strong><span>Minimum boxes</span></div>
+            <div><strong>3-4</strong><span>Weeks for bespoke work</span></div>
+            <div><strong>1:1</strong><span>Recipient QR greetings</span></div>
+          </div>
+          <a class="button button-outline" href="#builder" id="corporate-order">Start a corporate order</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-brand">
+        <a class="brand brand-light" href="#top" aria-label="Chocovibe home"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>choco<span>vibe</span></span></a>
+        <p>Chocolate, dry fruit, and a little more feeling.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#collections">Gift boxes</a>
+        <a href="#corporate">Corporate gifting</a>
+        <a href="#qr-experience">QR greetings</a>
+      </div>
+      <p class="footer-credit">Crafted with care in India.</p>
+    </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite">Your WhatsApp message is ready.</div>
+    <script src="script.js"></script>
+  </body>
+</html>

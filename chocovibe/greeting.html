@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#7b1e25" />
+    <title>A Chocovibe gift note</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="greeting-page">
+    <main class="greeting-shell">
+      <a class="greeting-brand" href="index.html" aria-label="Chocovibe home">choco<span>vibe</span></a>
+      <section class="greeting-card" aria-labelledby="greeting-title">
+        <p class="eyebrow">A little note for</p>
+        <h1 id="greeting-title">Ananya</h1>
+        <div class="diya" aria-hidden="true"><span></span></div>
+        <p class="greeting-message">May the table be full, the evening linger, and this festive season bring you a little more light.</p>
+        <div class="greeting-rule" aria-hidden="true"></div>
+        <p class="greeting-from">With warm wishes<br />from someone who thought of you.</p>
+        <p class="greeting-craft">Crafted by Chocovibe</p>
+      </section>
+    </main>
+    <script>
+      const giftName = new URLSearchParams(window.location.search).get('to');
+      const title = document.getElementById('greeting-title');
+      if (giftName && giftName.trim()) title.textContent = giftName.trim().slice(0, 40);
+    </script>
+  </body>
+</html>
